@@ -88,8 +88,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     background-color: black;
-    height: 80vh;
-    max-height: 633px;
+    max-height: 700px;
     border-radius: 0px 0px 0px 100px;
     max-width: 150%;
   }
@@ -262,7 +261,7 @@ h4 {
   display: flex;
   flex-flow: wrap;
   width: auto;
-  padding-top: 160px;
+  padding-top: 240px;
   padding-bottom: 240px;
   justify-content: center;
   align-items: center;
