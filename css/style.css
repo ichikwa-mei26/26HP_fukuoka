@@ -185,7 +185,7 @@ h2 {
   font-size: clamp(40px, 2.6vw, 56px);
   border-left: solid 5px #000000; 
   text-align: center;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 h4 {
