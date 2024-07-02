@@ -200,7 +200,6 @@ h4 {
 
 /*NewOpenエリア*/
 
-
 .new_oficce-area {
   background-image:url(../image/background-logo.png);
   background-repeat:  no-repeat;
@@ -470,7 +469,6 @@ h3 {
     border-radius: 100px;
     margin-right: 0.5rem;
     bottom: 1rem;
-    margin-bottom: 12vh;
     font-size: clamp(0.5px, 1.8vw, 16px);
     border: solid #fff;
   }
