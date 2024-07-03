@@ -109,6 +109,7 @@ header {
     padding-left: 1rem;
   }
 
+/*左右のアニメーション*/
   .slide-in {
     overflow: hidden;
     display: inline-block;
@@ -119,7 +120,6 @@ header {
   
   }
   
-  /*左右のアニメーション*/
   .leftAnime{
       opacity: 0;/*事前に透過0にして消しておく*/
   }
@@ -162,7 +162,116 @@ header {
       opacity: 1;
     }
   }
+
+  /* タイトルアニメーション */
+  .slide-in2 {
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .slide-in_inner2 {
+    display: inline-block;
+  
+  }
+  
+  .leftAnime2 {
+      opacity: 0;/*事前に透過0にして消しておく*/
+  }
+
+  .slideAnimeLeftRight2 {
+    animation-name:slideTextX100;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+      opacity: 0;
+  }
+  
+  @keyframes slideTextX100 {
+    from {
+    transform: translateX(-100%); /*要素を左の枠外に移動*/
+          opacity: 0;
+    }
+  
+    to {
+    transform: translateX(0);/*要素を元の位置に移動*/
+      opacity: 1;
+    }
+  }
+  
+  .slideAnimeRightLeft2 {
+    animation-name:slideTextX-100;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+      opacity: 0;
+  }
+  
+  
+  @keyframes slideTextX-100 {
+    from {
+    transform: translateX(100%);/*要素を右の枠外に移動*/
+      opacity: 0;
+    }
+  
+    to {
+
+      opacity: 1;
+    }
+  }
  
+/* その他アニメーション */
+.slide-in3 {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner3 {
+  display: inline-block;
+
+}
+
+.leftAnime3 {
+    opacity: 0;/*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight3 {
+  animation-name:slideTextX100;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+  transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft3 {
+  animation-name:slideTextX-100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+  transform: translateX(100%);/*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+
+    opacity: 1;
+  }
+}
+
 .text {
     color: #fff;
     font-size: clamp(8px, 1.8vw, 16px);
@@ -179,7 +288,8 @@ header {
 }
 
 .maintext {
-    display: inline-block;
+    display: flex;
+    flex-flow: column;
     text-align: left;
     padding-top: 20vh;
     padding-left: 25%;
