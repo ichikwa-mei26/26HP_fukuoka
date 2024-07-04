@@ -40,6 +40,10 @@ header {
     padding-left: 20px;
   }
 
+  .logo-image2 {
+    padding: 1rem;
+  }
+
  a {
     color: #fff;
     text-decoration: none;
@@ -100,13 +104,18 @@ header {
 
   h1 {
     color: #fff;
-    font-size: clamp(24px, 1.8vw, 48px);
+    font-size: clamp(50px, 1.5vw, 54px);
   }
 
   p {
     font-weight: 500;
-    color: rgb(71, 71, 71);
-    padding-left: 1rem;
+    color: rgb(15, 15, 15);
+    padding: 1rem;
+  }
+
+  .gray_color {
+    color: #606060;
+    font-weight: 550;
   }
 
 /*左右のアニメーション*/
@@ -279,13 +288,24 @@ header {
 }
 
 .backblue {
-  font-size: clamp(18px, 1.8vw, 24px);
+  font-size: clamp(16px, 1.8vw, 24px);
   font-weight: 550;
   color: #000000;
   border-bottom: solid 3px;
   border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
   padding: 10px 15px; 
 }
+
+.backblue2 {
+  font-size: clamp(16px, 1.8vw, 24px);
+  font-weight: 550;
+  letter-spacing: -2px;
+  color: #000000;
+  border-bottom: solid 3px;
+  border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
+  padding: 10px 15px; 
+}
+ 
 
 .maintext {
     display: flex;
@@ -340,13 +360,14 @@ header {
 
 .about-text {
   font-weight: bold;
-  font-size: 16px;
+  font-size: clamp(16px, 2.6vw, 20px);
   font-weight: 550;
   line-height: 200%;
 }
 
 h2 {
   font-size: clamp(40px, 2.6vw, 56px);
+  letter-spacing: -1px;
   border-left: solid 5px #000000; 
   text-align: center;
   padding-left: 1rem;
@@ -371,7 +392,7 @@ h4 {
   display: flex;
   flex-flow: wrap;
   width: auto;
-  padding-top: 240px;
+  padding-top: 160px;
   padding-bottom: 240px;
   justify-content: center;
   align-items: center;
@@ -485,7 +506,7 @@ h3 {
   height: 200px;
   flex-direction: column;
   align-items: center;
-  gap: 47px;
+  gap: 8px;
   text-align: center;
 }
 
@@ -509,10 +530,23 @@ h3 {
 .sub {
   color: #7E7E7E;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .bold {
   font-weight: bold;
+  color: #005694;
+}
+
+.bluetext {
+  font-weight: 500;
+  color: #438EC4;
+}
+
+.bluelink {
+  font-weight: bold;
+  color: #005694;
+  text-decoration:underline;
 }
 
 .Introduction {
@@ -529,7 +563,7 @@ h3 {
   background-color: #ECECEC;
   display: flex;
   width: auto;
-  padding: 16px 124px 32px 124px;
+  padding: 0px 124px 0px 124px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -645,6 +679,40 @@ h3 {
  a {
     color: #fff;
     text-decoration: none;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: clamp(24px, 1.5vw, 30px);
+    letter-spacing: -1px;
+  }
+
+  .maintext {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    padding-top: 22vh;
+    padding-left: 8%;
+}
+
+  .backblue {
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: -2px;
+    color: #000000;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
+    padding: 10px 15px; 
+  }
+
+  .backblue2 {
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: -2px;
+    color: #000000;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
+    padding: 10px 15px; 
   }
    
   .menu-item {
