@@ -5,7 +5,7 @@ html[lang="ja"] {
 }
 
 header {
-    /* position: sticky; */
+    position: sticky;
     z-index: 999;
     top: 0;
     display: flex;
