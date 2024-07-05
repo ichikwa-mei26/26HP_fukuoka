@@ -332,7 +332,6 @@ header {
 .backblue2 {
   font-size: clamp(20px, 1.8vw, 24px);
   font-weight: 550;
-  letter-spacing: -2px;
   color: #000000;
   border-bottom: solid 3px;
   border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
