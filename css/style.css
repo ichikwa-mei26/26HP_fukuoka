@@ -9,13 +9,7 @@ body {
   margin-top: -24px;
 }
 
-section:before {
-  content: "";
-  display: block;
-  height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
-  margin-top: -100px; /* heightと同じ分のネガティブマージン */
-  visibility: hidden;
-}
+
 
 header {
     position: sticky;
@@ -766,6 +760,14 @@ h3 {
 @media screen and (max-width: 480px) {
   .black {
     height: 400px;
+  }
+
+  section:before {
+    content: "";
+    display: block;
+    height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
+    margin-top: -100px; /* heightと同じ分のネガティブマージン */
+    visibility: hidden;
   }
 
   .scroll-image {
