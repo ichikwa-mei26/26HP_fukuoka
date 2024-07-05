@@ -5,7 +5,7 @@ html[lang="ja"] {
 }
 
 header {
-    position: sticky;
+    /* position: sticky; */
     z-index: 999;
     top: 0;
     display: flex;
@@ -284,10 +284,8 @@ header {
 
 .text {
     color: #ffffff;
-
-    background: rgba(0, 0, 0, 0.5);
     font-size: clamp(18px, 1.8vw, 24px);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .backblue {
@@ -423,7 +421,7 @@ h4 {
   padding-bottom: 100px;
   justify-content: center;
   align-items: center;
-  gap: 124px;
+  gap: 40px;
 }
 
 .about-image {
@@ -559,8 +557,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8rem;
-  gap: 24px;
+  padding-bottom: 80px;
+  gap: 20px;
 }
 
 .gray_box {
@@ -610,12 +608,13 @@ h3 {
   padding-bottom: 80px;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .QA-image {
   border-radius: 3%;
   box-shadow: 15px 15px 0px 0 rgb(0, 0, 0);
-  max-width: 70%; 
+  max-width: 50%; 
 }
 
 .whitebox-area {
@@ -629,15 +628,16 @@ h3 {
   justify-content: center;
   padding-bottom: 10rem;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .whitebox {
   background-color: #fff;
-  width: 55%;
+  width: 50%;
   max-width: 900%;
-  min-width: 400px;
+  min-width: 500px;
   height: 20%;
+  padding-top: 8px;
   padding-bottom: 2rem;
   border-radius: 10px;
   align-items: center;
@@ -657,12 +657,12 @@ h3 {
 
 .A {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 .QAicon-image {
-  padding: 2.8rem 0rem 1rem 2.8rem;
+  padding: 1.3rem;
   width: clamp(5em, 1.8vw, 10em);;
 }
 
@@ -730,7 +730,7 @@ h3 {
   }
 
   .scroll-image {
-    padding-top: 130px;
+    padding-top: 180px;
     padding-left: 36px;
   }
 
@@ -738,8 +738,9 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    max-height: 80%;
+    max-height: 100%;
     background-color: black;
+    padding-bottom: 16px;
   }
 
   .top-button {
@@ -777,7 +778,6 @@ h3 {
 
   .text {
     color: #ffffff;
-    background: rgba(71, 71, 71, 0.5);
     font-size: 8px;
     font-weight: bold;
 }
@@ -787,22 +787,22 @@ h3 {
     flex-wrap: wrap;
     flex-flow: column;
     text-align: left;
-    padding-top: 22vh;
+    padding-top: 24vh;
     padding-left: 8%;
     gap: 8px;
 }
 
   .backblue {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 550;
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     color: #000000;
     border-bottom: solid 3px;
     border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
   }
 
   .backblue2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 550;
     letter-spacing: -2px;
     color: #000000;
@@ -825,6 +825,7 @@ h3 {
   .menu-button {
     display: flex;
     align-items: center;
+    padding-left: 0.5rem;
   }
 
   .purchase-button a{
@@ -845,12 +846,18 @@ h3 {
     font-size: 16px;
   }  
 
-  .new_oficce-image, .about-image, .business-image, .recruit-image .QA-image{
+  .new_oficce-image, .about-image, .business-image, .recruit-image {
     border-radius: 0%;
     box-shadow: 0px 0px 0px 0 rgb(0, 0, 0);
     max-width: 100%; 
   }
   
+  .QA-image {
+    border-radius: 0%;
+    box-shadow: 0px 0px 0px 0 rgb(0, 0, 0);
+    max-width: 100%;  
+  }
+
   .new_oficce-area {
     background-image:url(../image/background-logo.png);
     background-repeat:  no-repeat;
@@ -858,11 +865,11 @@ h3 {
     display: flex;
     flex-flow: wrap row-reverse;
     width: auto;
-    padding-top: 160px;
+    padding-top: 40px;
     padding-bottom: 0px;
     justify-content: center;
     align-items: center;
-    gap: 124px;
+    gap: 40px;
   }
 
   .about-area {
@@ -870,11 +877,11 @@ h3 {
     display: flex;
     flex-wrap: wrap-reverse;
     width: auto;
-    padding-top: 160px;
+    padding-top: 40px;
     padding-bottom: 0px;
     justify-content: center;
     align-items: center;
-    gap: 124px;
+    gap: 40px;
   }
 
   .business-area {
@@ -882,22 +889,22 @@ h3 {
     display: flex;
     flex-flow: wrap row-reverse;
     width: auto;
-    padding-top: 160px;
+    padding-top: 40px;
     padding-bottom: 0px;
     justify-content: center;
     align-items: center;
-    gap: 124px;
+    gap: 40px;
   }
 
   .recruit-area {
     display: flex;
     flex: wrap;
     width: auto;
-    padding-top: 160px;
+    padding-top: 40px;
     padding-bottom: 0px;
     justify-content: center;
     align-items: center;
-    gap: 124px;
+    gap: 40px;
   }
 
   .button-black {
@@ -919,9 +926,10 @@ h3 {
 
   .whitecolor {
     border: solid 0px #000000;
+    letter-spacing: -2px;
     width: 500px;
-    height: 50px;
-    font-size: 24px;
+    height: 60px;
+    font-size: 16px;
     text-align: center;
     padding: 1rem;
 }
@@ -934,8 +942,8 @@ h3 {
   color: #fff;
   justify-content: center;
   width: 800px;
-  height: 100px;
-  font-size: 24px;
+  height: 50px;
+  font-size: 16px;
   align-items: center;
 }  
 
@@ -944,16 +952,16 @@ h3 {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding-bottom: 40px;
   align-items: center;
-  gap: 24px;
+  gap: 0px;
 }
 
 .gray_box {
   background-color: #ECECEC;
   display: flex;
   width: auto;
-  padding: 16px 24px 32px 24px;
+  padding: 0px 24px 0px 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -975,7 +983,7 @@ h3 {
 .box_title {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 
 .No_bold {
@@ -993,11 +1001,11 @@ h3 {
   display: flex;
   flex-flow: wrap;
   width: auto;
-  padding-top: 160px;
-  padding-bottom: 240px;
+  padding-top: 40px;
+  padding-bottom: 0px;
   justify-content: center;
   align-items: center;
-  gap: 124px;
+  gap: 40px;
 }
 
 .whitebox-area {
@@ -1008,17 +1016,22 @@ h3 {
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 
-.whitebox {
-  background-color: #fff;
-  width: 100%;
-  height: 20%;
-  padding-bottom: 4rem;
-}
+  .whitebox {
+    background-color: #fff;
+    width: 50%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 20%;
+    padding-top: 8px;
+    padding-bottom: 2rem;
+    border-radius: 0px;
+    align-items: center;
+  }
 
 .QAtext {
   text-align: left;
