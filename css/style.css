@@ -4,6 +4,19 @@ html[lang="ja"] {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+body {
+  padding-top: 24px;
+  margin-top: -24px;
+}
+
+section:before {
+  content: "";
+  display: block;
+  height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
+  margin-top: -100px; /* heightと同じ分のネガティブマージン */
+  visibility: hidden;
+}
+
 header {
     position: sticky;
     z-index: 999;
@@ -38,15 +51,37 @@ header {
   .logo-image {
     margin-right: auto;
     padding-left: 20px;
+    width: 7rem;
   }
 
   .logo-image2 {
-    padding: 5rem;
+    width: 8.3rem;
   }
 
  a {
     color: #fff;
     text-decoration: none;
+  }
+  
+  .indention {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 3px;
+    align-items: center;
+    width: 100%;
+    max-height: 40px;
+    min-height: 12px;
+  }
+
+  .indention-area {
+    padding-left: 2rem;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .text-size {
+    width: 340px;
+    font-size: clamp(14px, 1.8vw, 16px);
   }
    
   .menu-item {
@@ -108,15 +143,18 @@ header {
   }
 
   p {
-    font-size: 18px;
+    font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 500;
     color: rgb(15, 15, 15);
     padding: 1rem;
   }
 
   .gray_color {
+    display: flex;
     color: #606060;
     font-weight: 550;
+    padding: 0px;
+    font-size: clamp(14px, 1.5vw, 16px);
   }
 
 /*左右のアニメーション*/
@@ -289,7 +327,7 @@ header {
 }
 
 .backblue {
-  font-size: clamp(14px, 1.8vw, 18px);
+  font-size: clamp(16px, 1.8vw, 18px);
   font-weight: 550;
   color: #000000;
   border-bottom: solid 3px;
@@ -298,7 +336,7 @@ header {
 }
 
 .backblue2 {
-  font-size: clamp(16px, 1.8vw, 24px);
+  font-size: clamp(20px, 1.8vw, 24px);
   font-weight: 550;
   letter-spacing: -2px;
   color: #000000;
@@ -460,6 +498,7 @@ h3 {
 .backwhite {
   font-size: clamp(18px, 1.8vw, 24px);
   font-weight: 550;
+  line-height: 50px;
   color: #ffffff;
   border-bottom: solid 3px;
   border-image: linear-gradient(to right, #ffffff, #233b52) 1;
@@ -770,10 +809,44 @@ h3 {
     text-decoration: none;
   }
 
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    padding: 1rem;
+  }
+
   h1 {
     color: #fff;
     font-size: clamp(24px, 1.5vw, 30px);
     letter-spacing: -1px;
+  }
+
+  .indention {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 3px;
+    align-items: center;
+    width: 100%;
+    max-height: 40px;
+    min-height: 12px;
+  }
+
+  .indention-area {
+    padding-left: 2rem;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .text-size {
+    width: 340px;
+    font-size: 16px;
+  }
+   
+
+  .gray_text {
+    text-align: left;
+    font-size: 16px;
   }
 
   .text {
@@ -793,18 +866,18 @@ h3 {
 }
 
   .backblue {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 50px;
     font-weight: 550;
-    letter-spacing: -2.5px;
     color: #000000;
     border-bottom: solid 3px;
     border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
   }
 
   .backblue2 {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 50px;
     font-weight: 550;
-    letter-spacing: -2px;
     color: #000000;
     border-bottom: solid 3px;
     border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
@@ -926,7 +999,7 @@ h3 {
 
   .whitecolor {
     border: solid 0px #000000;
-    letter-spacing: -2px;
+    letter-spacing: -1.3px;
     width: 500px;
     height: 60px;
     font-size: 16px;
