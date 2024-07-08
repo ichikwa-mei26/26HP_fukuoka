@@ -5,14 +5,12 @@ html[lang="ja"] {
 }
 
 body {
-  padding-top: 24px;
-  margin-top: -24px;
+  padding-top: 40px;
+
 }
 
-
-
 header {
-    position: sticky;
+    position: fixed;
     z-index: 999;
     top: 0;
     display: flex;
@@ -105,7 +103,6 @@ header {
     font-size: clamp(0.5px, 1.8vw, 16px);
   }
 
-
   .purchase-button a:hover{
     background-color: #000;
     color: #fff;
@@ -121,7 +118,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     background-color: black;
-    max-height: 700px;
+    height: auto;
     border-radius: 0px 0px 0px 100px;
     max-width: 150%;
   }
@@ -140,7 +137,7 @@ header {
     font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 500;
     color: rgb(15, 15, 15);
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .gray_color {
@@ -326,7 +323,7 @@ header {
   color: #000000;
   border-bottom: solid 3px;
   border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
-  padding: 10px 15px; 
+  padding: 10px 10px; 
 }
 
 .backblue2 {
@@ -335,7 +332,7 @@ header {
   color: #000000;
   border-bottom: solid 3px;
   border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
-  padding: 10px 15px; 
+  padding: 10px 10px; 
 }
  
 
@@ -343,7 +340,7 @@ header {
     display: flex;
     flex-flow: column;
     text-align: left;
-    padding-top: 15vh;
+    padding-top: 13vh;
     padding-left: 25%;
     gap: 8px;
 }
@@ -430,7 +427,7 @@ h4 {
   flex-flow: wrap;
   width: auto;
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -448,8 +445,8 @@ h4 {
   display: flex;
   flex-flow: wrap-reverse;
   width: auto;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -468,8 +465,8 @@ h4 {
   display: flex;
   flex-flow: wrap;
   width: auto;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -508,7 +505,7 @@ h3 {
   display: flex;
   flex-flow: wrap-reverse;
   width: auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 40px;
   justify-content: center;
   align-items: center;
@@ -636,7 +633,7 @@ h3 {
   display: flex;
   flex-flow: wrap;
   width: auto;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 80px;
   justify-content: center;
   align-items: center;
@@ -664,10 +661,9 @@ h3 {
 }
 
 .whitebox {
-  background-color: #fff;
-  width: 50%;
-  max-width: 900%;
-  min-width: 500px;
+  background-color: #fff;;
+  max-width: 75%;
+  min-width: 50%;
   height: 20%;
   padding-top: 8px;
   padding-bottom: 2rem;
@@ -677,13 +673,13 @@ h3 {
 
 .QAtext {
   text-align: left;
-  font-size: clamp(16px, 2.6vw, 18px);
+  font-size: clamp(12px, 2.6vw, 18px);
   padding: 0px 40px 0px 40px;
 }
 
 .Q {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -861,7 +857,7 @@ h3 {
     flex-wrap: wrap;
     flex-flow: column;
     text-align: left;
-    padding-top: 24vh;
+    padding-top: 20vh;
     padding-left: 8%;
     gap: 8px;
 }
@@ -1028,7 +1024,7 @@ h3 {
   justify-content: center;
   padding-bottom: 40px;
   align-items: center;
-  gap: 0px;
+  gap: 4px;
 }
 
 .gray_box {
