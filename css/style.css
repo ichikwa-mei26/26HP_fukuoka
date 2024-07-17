@@ -660,16 +660,6 @@ h3 {
   gap: 20px;
 }
 
-.whitebox {
-  background-color: #fff;
-  width: 60rem;
-  max-width: 75%;
-  height: 20%;
-  padding-top: 8px;
-  padding-bottom: 2rem;
-  border-radius: 10px;
-  align-items: center;
-}
 
 .QAtext {
   text-align: left;
@@ -677,21 +667,9 @@ h3 {
   padding: 0px 40px 0px 40px;
 }
 
-.Q {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.A {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
 .QAicon-image {
   padding: 1.3rem;
-  width: clamp(5em, 1.8vw, 10em);;
+  width: 2.5rem;
 }
 
 .QAtitle {
@@ -703,6 +681,85 @@ h3 {
 
 .whiteboxtext {
   display: block;
+  align-items: center;
+}
+
+.accordion-container {
+  width: 60rem;
+  max-width: 75%;
+  height: 20%;
+  padding-top: 8px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+details {
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+summary {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+details[open] summary {
+  background-color: #ffffff;
+}
+
+.icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  transform-origin: center 43%;
+  transition: transform 0.4s;
+}
+
+/* アコーディオンが開いた時のスタイル */
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+/* アイコンのバーのスタイル */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 15px;
+  height: 3px;
+  background-color: #005694;
+}
+
+.icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.set {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -751,6 +808,9 @@ h3 {
   font-size: 20px;
   font-weight: 550;
 }
+
+
+
 
 @media screen and (max-width: 480px) {
   .black {
@@ -1070,12 +1130,18 @@ h3 {
   background-color: #ECECEC;
   display: flex;
   flex-flow: wrap;
-  width: auto;
-  padding-top: 40px;
-  padding-bottom: 0px;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.QA-image {
+  border-radius: 3%;
+  box-shadow: 15px 15px 0px 0 rgb(0, 0, 0);
+  max-width: 70%; 
 }
 
 .whitebox-area {
@@ -1086,47 +1152,22 @@ h3 {
   display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 10rem;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-  .whitebox {
-    background-color: #fff;
-    width: 50%;
-    max-width: 100%;
-    min-width: 100%;
-    height: 20%;
-    padding-top: 8px;
-    padding-bottom: 2rem;
-    border-radius: 0px;
-    align-items: center;
-  }
 
 .QAtext {
   text-align: left;
-  font-size: clamp(14px, 2.6vw, 18px);
+  font-size: clamp(12px, 2.6vw, 18px);
   padding: 0px 40px 0px 40px;
 }
 
-.Q {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: column;
-  align-items: left;
-}
-
-.A {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: column;
-  align-items: center;
-}
-
 .QAicon-image {
-  padding: 2rem 0rem 2rem 0rem;
-  width: 40px;
-  height: auto;
+  padding: 1.3rem;
+  width: 3rem;
 }
 
 .QAtitle {
@@ -1137,6 +1178,89 @@ h3 {
 }
 
 .whiteboxtext {
+  display: block;
   align-items: center;
 }
+
+.accordion-container {
+  width: 60rem;
+  max-width: 100%;
+  height: 20%;
+  padding-top: 8px;
+  background-color: #ffffff;
+  border-radius: 0px;
 }
+
+details {
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+details[open] summary {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  transform-origin: center 43%;
+  transition: transform 0.4s;
+}
+
+/* アコーディオンが開いた時のスタイル */
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+/* アイコンのバーのスタイル */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #005694;
+}
+
+.icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.set{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  gap: 2.3rem;
+}
+}
+
