@@ -1131,12 +1131,6 @@ details[open] .icon {
   gap: 40px;
 }
 
-.QA-image {
-  border-radius: 3%;
-  box-shadow: 15px 15px 0px 0 rgb(0, 0, 0);
-  max-width: 70%; 
-}
-
 .whitebox-area {
   background-image:url(../image/background-logo2.png);
   background-repeat:  no-repeat;
