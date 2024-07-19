@@ -135,7 +135,7 @@ header {
 
   .small {
     color: #fff;
-    font-size: clamp(36px, 1.5vw, 40px);
+    font-size: clamp(16px, 1.5vw, 40px);
   } 
   .small2 {
     color: #000000;
@@ -547,10 +547,10 @@ h3 {
 
 .recruit-box {
   display: flex;
-  height: 300px;
+  height: 440px;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
   text-align: center;
 }
 
