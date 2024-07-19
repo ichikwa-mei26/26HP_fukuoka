@@ -515,7 +515,7 @@ h3 {
 .recruit-area {
   display: flex;
   flex-flow: wrap-reverse;
-  width: auto;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 40px;
   justify-content: center;
@@ -554,9 +554,13 @@ h3 {
   text-align: center;
 }
 
+.engineer-image {
+  padding-top: 1rem;
+}
+
 .recruit-boxarea {
   display: flex;
-  width: 70%;
+  width: 75%;
   justify-content: center;
   gap: 40px 40px;
   flex-wrap: wrap;
@@ -604,8 +608,9 @@ h3 {
 .gray_box {
   background-color: #ECECEC;
   display: flex;
-  width: auto;
-  padding: 0px 140px 0px 140px;
+  flex-wrap: nowrap;
+  width: 40%;
+  padding: 0px 120px 0px 120px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1094,8 +1099,9 @@ details[open] .icon {
 .gray_box {
   background-color: #ECECEC;
   display: flex;
-  width: auto;
-  padding: 0px 24px 0px 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 64px 0px 64px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1254,3 +1260,441 @@ details[open] .icon {
 }
 }
 
+@media screen and (min-width: 480px) and (max-width: 960px)  {
+  .black {
+    height: 400px;
+  }
+
+  section:before {
+    content: "";
+    display: block;
+    height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
+    margin-top: -100px; /* heightと同じ分のネガティブマージン */
+    visibility: hidden;
+  }
+
+  .scroll-image {
+    padding-top: 180px;
+    padding-left: 36px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: black;
+    padding-bottom: 16px;
+  }
+
+  .top-button {
+    position: fixed;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-right: 0.5rem;
+    bottom: 1rem;
+    font-size: clamp(0.5px, 1.8vw, 16px);
+    border: solid #fff;
+  }
+
+  .logo-image {
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+ a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    padding: 1rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: clamp(24px, 1.5vw, 30px);
+    letter-spacing: -1px;
+  }
+
+  .indention {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 3px;
+    align-items: center;
+    width: 100%;
+    max-height: 40px;
+    min-height: 12px;
+  }
+
+  .indention-area {
+    padding-left: 2rem;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .text-size {
+    width: 340px;
+    font-size: 16px;
+  }
+   
+
+  .gray_text {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .text {
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+  .maintext {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: left;
+    padding-top: 20vh;
+    padding-left: 8%;
+    gap: 8px;
+}
+
+  .backblue {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 550;
+    color: #000000;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
+  }
+
+  .backblue2 {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 550;
+    color: #000000;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to right, #002F52, #b0c6da) 1;
+  }
+   
+  .menu-item {
+    list-style: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+  }
+
+  .menu-group {
+    padding-right: 30px
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+  }
+
+  .purchase-button a{
+    background-color: #fff;
+    color: #000;
+    padding: 4px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+
+
+  .purchase-button a:hover{
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 4px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+  }  
+
+  .new_oficce-image, .about-image, .business-image, .recruit-image {
+    border-radius: 3%;
+    box-shadow: 15px 15px 0px 0 rgb(0, 0, 0);
+    max-width: 70%;
+  }
+  
+  .QA-image {
+    border-radius: 3%;
+    box-shadow: 15px 15px 0px 0 rgb(0, 0, 0);
+    max-width: 70%;
+  }
+
+  .new_oficce-area {
+    background-image:url(../image/background-logo.png);
+    background-repeat:  no-repeat;
+    background-position: right top;  
+    display: flex;
+    flex-flow: wrap row-reverse;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-area {
+    background-color: #ECECEC;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .business-area {
+    background-color: #000;
+    display: flex;
+    flex-flow: wrap row-reverse;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .recruit-area {
+    display: flex;
+    flex: wrap;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .button-black {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 12px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+  }
+
+  .mail-text {
+    font-size: clamp(8px, 1.8vw, 16px) ;
+  }
+
+  .whitecolor {
+    border: solid 0px #000000;
+    letter-spacing: -1.3px;
+    width: 500px;
+    height: 60px;
+    font-size: 16px;
+    text-align: center;
+    padding: 1rem;
+}
+
+   
+.blackcolor {
+  display: flex;
+  font-weight: normal;
+  background-color: black;
+  color: #fff;
+  justify-content: center;
+  width: 800px;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+}  
+
+.Introduction {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+  align-items: center;
+  gap: 4px;
+}
+
+.gray_box {
+  background-color: #ECECEC;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 0px 64px 0px 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.box_text {
+  text-align: center;
+  gap: 1rem;
+}
+
+.gray_text {
+  padding-left: 3rem;
+  text-align: left;
+  font-size: clamp(14px, 2.6vw, 16px);
+}
+
+.box_title {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0rem;
+}
+
+.No_bold {
+  font-weight: bold;
+  font-size: clamp(32px, 1.8vw, 40px);
+}
+
+.bold_recruit {
+  font-weight: bold;
+  font-size: clamp(16px, 1.8vw, 20px);
+}
+
+.QA-area {
+  background-color: #ECECEC;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.whitebox-area {
+  background-image:url(../image/background-logo2.png);
+  background-repeat:  no-repeat;
+  background-position: left bottom; 
+  background-color: #ECECEC;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10rem;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.QAtext {
+  text-align: left;
+  font-size: clamp(12px, 2.6vw, 18px);
+  padding: 0px 40px 0px 40px;
+}
+
+.QAicon-image {
+  padding: 1.3rem;
+  width: 3rem;
+}
+
+.QAtitle {
+  font-size: clamp(14px, 2.6vw, 20px);
+  font-weight: bold;
+  color: #005694;
+  padding: 0px 40px 0px 40px;
+}
+
+.whiteboxtext {
+  display: block;
+  align-items: center;
+}
+
+.accordion-container {
+  width: 60rem;
+  max-width: 80%;
+  height: 20%;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+
+.icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  margin-left: 0px;
+  flex-shrink: 0;
+  transform-origin: center 43%;
+  transition: transform 0.4s;
+}
+
+/* アコーディオンが開いた時のスタイル */
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+/* アイコンのバーのスタイル */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #005694;
+}
+
+.icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.set{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  gap: 2.3rem;
+}
+}
