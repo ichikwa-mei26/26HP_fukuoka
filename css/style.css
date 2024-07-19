@@ -133,6 +133,17 @@ header {
     font-size: clamp(50px, 1.5vw, 54px);
   }
 
+  .small {
+    color: #fff;
+    font-size: clamp(36px, 1.5vw, 40px);
+  } 
+  .small2 {
+    color: #000000;
+    font-size: clamp(8px, 1.5vw, 16px);
+  } 
+
+
+
   p {
     font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 500;
