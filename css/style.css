@@ -135,7 +135,7 @@ header {
 
   .small {
     color: #fff;
-    font-size: clamp(16px, 1.5vw, 40px);
+    font-size: clamp(18px, 1.5vw, 40px);
   } 
   .small2 {
     color: #000000;
@@ -556,6 +556,7 @@ h3 {
 
 .engineer-image {
   padding-top: 1rem;
+  width: rem;
 }
 
 .recruit-boxarea {
@@ -1365,7 +1366,7 @@ details[open] .icon {
     flex-wrap: wrap;
     flex-flow: column;
     text-align: left;
-    padding-top: 20vh;
+    padding-top: 16vh;
     padding-left: 8%;
     gap: 8px;
 }
@@ -1697,4 +1698,21 @@ details[open] .icon {
   align-items: center;
   gap: 2.3rem;
 }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1280px)  {
+  .gray_box {
+    background-color: #ECECEC;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    padding: 0px 120px 0px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  
 }
